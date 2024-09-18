@@ -10,8 +10,17 @@
 
 #include "main.h"
 
+#define STATE1 0
+#define STATE2 1
+#define STATE3 2
+#define STATE4 3
+
+
+
 void display7SEG(int num);
 
 void switchLed();
+
+void setClock();
 
 #endif /* INC_EXERCISE1_H_ */
