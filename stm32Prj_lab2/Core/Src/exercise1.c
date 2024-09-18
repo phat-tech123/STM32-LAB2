@@ -124,6 +124,8 @@ void switchLed(){
 	}
 }
 
+
+
 void setClock(){
 	switch(state7SEG){
 	case STATE1:
