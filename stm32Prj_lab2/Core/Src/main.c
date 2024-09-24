@@ -96,24 +96,19 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   setTimer(0, 100);
-  setTimer(1, 100);
-  setTimer(2, 50);
+  setTimer(1, 50);
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
 	  if(timer_flag[0] >= 1){
-		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+		  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
 		  setTimer(0,100);
 	  }
 	  if(timer_flag[1] >= 1){
-		  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
-		  setTimer(1,100);
-	  }
-	  if(timer_flag[2] >= 1){
 		  setClock();
-		  setTimer(2,50);
+		  setTimer(1,50);
 	  }
   }
   /* USER CODE END 3 */
