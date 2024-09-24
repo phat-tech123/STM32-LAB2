@@ -23,4 +23,6 @@ void switchLed();
 
 void setClock();
 
+void update7SEG(int index);
+
 #endif /* INC_EXERCISE1_H_ */
