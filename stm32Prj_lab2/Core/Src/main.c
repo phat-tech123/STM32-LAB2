@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
+#include "exercise1.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
