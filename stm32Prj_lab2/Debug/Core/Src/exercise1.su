@@ -1,4 +1,5 @@
 exercise1.c:10:6:display7SEG	16	static
 exercise1.c:108:6:switchLed	8	static
 exercise1.c:127:6:setClock	8	static
-exercise1.c:169:6:update7SEG	16	static
+exercise1.c:166:6:enableLed	16	static
+exercise1.c:199:6:update7SEG	16	static

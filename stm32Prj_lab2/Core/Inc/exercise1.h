@@ -24,7 +24,6 @@ void switchLed();
 void setClock();
 
 
-
 extern int index_led;
 void update7SEG(int index);
 
