@@ -10,6 +10,7 @@
 
 #include "main.h"
 
+
 #define STATE1 0
 #define STATE2 1
 #define STATE3 2
@@ -28,5 +29,8 @@ void setClock();
 extern int index_led;
 void update7SEG(int index);
 
+extern int hour, minute, second;
+extern int led_buffer [4];
+void updateClockBuffer();
 
 #endif /* INC_EXERCISE1_H_ */
