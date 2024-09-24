@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  0002000c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000892d  00000000  00000000  00020035  2**0
+ 12 .debug_info   00008951  00000000  00000000  00020035  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 0000172b  00000000  00000000  00028962  2**0
+ 13 .debug_abbrev 0000172b  00000000  00000000  00028986  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000980  00000000  00000000  0002a090  2**3
+ 14 .debug_aranges 00000980  00000000  00000000  0002a0b8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 000008b8  00000000  00000000  0002aa10  2**3
+ 15 .debug_ranges 000008b8  00000000  00000000  0002aa38  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000165f6  00000000  00000000  0002b2c8  2**0
+ 16 .debug_macro  000165f6  00000000  00000000  0002b2f0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000a0c6  00000000  00000000  000418be  2**0
+ 17 .debug_line   0000a0c6  00000000  00000000  000418e6  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00081f9d  00000000  00000000  0004b984  2**0
+ 18 .debug_str    00081faf  00000000  00000000  0004b9ac  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000cd921  2**0
+ 19 .comment      00000053  00000000  00000000  000cd95b  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002678  00000000  00000000  000cd974  2**2
+ 20 .debug_frame  00002678  00000000  00000000  000cd9b0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -604,8 +604,8 @@ int main(void)
  80004e6:	2164      	movs	r1, #100	; 0x64
  80004e8:	2000      	movs	r0, #0
  80004ea:	f000 f90b 	bl	8000704 <setTimer>
-  setTimer(1, 50);
- 80004ee:	2132      	movs	r1, #50	; 0x32
+  setTimer(1, 100);
+ 80004ee:	2164      	movs	r1, #100	; 0x64
  80004f0:	2001      	movs	r0, #1
  80004f2:	f000 f907 	bl	8000704 <setTimer>
   while (1)
@@ -951,6 +951,8 @@ static void MX_GPIO_Init(void)
 080006e4 <HAL_TIM_PeriodElapsedCallback>:
 
 /* USER CODE BEGIN 4 */
+int counter1 = 100;
+int counter2 = 100;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  80006e4:	b580      	push	{r7, lr}
  80006e6:	b082      	sub	sp, #8
