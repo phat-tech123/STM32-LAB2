@@ -33,4 +33,7 @@ extern int hour, minute, second;
 extern int led_buffer [4];
 void updateClockBuffer();
 
+
+void updateLEDMatrix(int index);
+
 #endif /* INC_EXERCISE1_H_ */
