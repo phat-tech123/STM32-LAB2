@@ -95,7 +95,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(0, 100);
+  setTimer(0, 1);
   int index_led_matrix = 0;
   while (1)
   {
@@ -104,7 +104,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  if(timer_flag[0] >= 1){
 		  updateLEDMatrix((index_led_matrix++)%8);
-		  setTimer(0,100);
+		  setTimer(0,1);
 	  }
   }
   /* USER CODE END 3 */

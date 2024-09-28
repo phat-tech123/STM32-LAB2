@@ -4,5 +4,5 @@ exercise1.c:127:6:setClock	8	static
 exercise1.c:166:6:enableLed	16	static
 exercise1.c:200:6:update7SEG	16	static
 exercise1.c:226:6:updateClockBuffer	4	static
-exercise1.c:233:6:displayLEDMatrix	16	static
-exercise1.c:239:6:updateLEDMatrix	16	static
+exercise1.c:233:6:clearMatrix	4	static
+exercise1.c:241:6:updateLEDMatrix	16	static
