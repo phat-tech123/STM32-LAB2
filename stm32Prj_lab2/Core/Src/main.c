@@ -103,7 +103,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  if(timer_flag[0] >= 1){
-		  updateLEDMatrix((index_led_matrix++)%8);
+		  updateLEDMatrix(index_led_matrix++);
 		  setTimer(0,1);
 	  }
   }
