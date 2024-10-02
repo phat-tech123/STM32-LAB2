@@ -35,5 +35,6 @@ void updateClockBuffer();
 
 
 void updateLEDMatrix(int index);
+void shilfBuffer();
 
 #endif /* INC_EXERCISE1_H_ */

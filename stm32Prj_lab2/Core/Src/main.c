@@ -97,6 +97,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   setTimer(0, 1);
   int index_led_matrix = 0;
+  setTimer(1, 100);
   while (1)
   {
     /* USER CODE END WHILE */
@@ -105,6 +106,10 @@ int main(void)
 	  if(timer_flag[0] >= 1){
 		  updateLEDMatrix(index_led_matrix++);
 		  setTimer(0,1);
+	  }
+	  if(timer_flag[1] >= 1){
+		  shilfBuffer();
+		  setTimer(1, 100);
 	  }
   }
   /* USER CODE END 3 */
