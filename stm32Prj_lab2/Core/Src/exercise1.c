@@ -252,48 +252,4 @@ void updateLEDMatrix(int index){
 	clearMatrix();
 	GPIOA->ODR = matrix_buffer[index];
 	GPIOB->ODR = A_buffer[index];
-//    switch (index){
-//        case 0:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        case 1:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        case 2:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        case 3:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        case 4:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        case 5:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        case 6:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        case 7:
-//        	clearMatrix();
-//        	GPIOA->ODR = matrix_buffer[index];
-//        	GPIOB->ODR = A_buffer[index];
-//            break;
-//        default:
-//            break;
-//    }
 }
