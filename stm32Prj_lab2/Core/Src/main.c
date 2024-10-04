@@ -106,6 +106,7 @@ int main(void)
 		  updateLEDMatrix(index_led_matrix++);
 		  setTimer(0,1);
 	  }
+	//HAL_Delay(5);
   }
   /* USER CODE END 3 */
 }
