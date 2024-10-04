@@ -239,7 +239,7 @@ const int MAX_LED_MATRIX = 8;
 uint16_t matrix_buffer[8] = {0xFFFB, 0xFFF7, 0xFBFF, 0xF7FF, 0xEFFF, 0xDFFF, 0xBFFF, 0x7FFF};
 uint16_t A_buffer[8] = {0x0300, 0x0100, 0xCC00, 0xCC00, 0xCC00, 0xCC00, 0x0100, 0x0300}; 	//character A
 
-void shilfBuffer(){
+void shiftBuffer(){
 	uint16_t tmp = A_buffer[0];
 	for(int i = 0; i < 7; i++){
 		A_buffer[i] = A_buffer[i+1];
@@ -249,48 +249,51 @@ void shilfBuffer(){
 
 void updateLEDMatrix(int index){
 	index %= 8;
-    switch (index){
-        case 0:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        case 1:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        case 2:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        case 3:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        case 4:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        case 5:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        case 6:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        case 7:
-        	clearMatrix();
-        	GPIOA->ODR = matrix_buffer[index];
-        	GPIOB->ODR = A_buffer[index];
-            break;
-        default:
-            break;
-    }
+	clearMatrix();
+	GPIOA->ODR = matrix_buffer[index];
+	GPIOB->ODR = A_buffer[index];
+//    switch (index){
+//        case 0:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        case 1:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        case 2:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        case 3:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        case 4:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        case 5:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        case 6:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        case 7:
+//        	clearMatrix();
+//        	GPIOA->ODR = matrix_buffer[index];
+//        	GPIOB->ODR = A_buffer[index];
+//            break;
+//        default:
+//            break;
+//    }
 }

@@ -108,7 +108,7 @@ int main(void)
 		  setTimer(0,1);
 	  }
 	  if(timer_flag[1] >= 1){
-		  shilfBuffer();
+		  shiftBuffer();
 		  setTimer(1, 100);
 	  }
   }
